@@ -161,61 +161,60 @@
 	
 	<h2 id="security">2. 安全</h2>
 	<p>Web安全持续成为Web平台和W3C关心的首要问题。Web是一个被广泛使用且具有多样性的平台，新的功能不断被添加进来——社交网络、视频、移动等，所有这些Web平台的新生事物都不断增强平台的影响力，并持续满足相关产业界的需求。W3C 也按照 Web用户安全、Web应用安全、Web平台安全的优先级顺序，不断致力于解决 Web平台的安全问题。</p>
-	<p>We have taken a number of steps since TPAC 2015 to improve the security and privacy of the Web Platform and two upcoming Web security milestones are WebCrypto &amp; Killing Passwords.</p>
+	<p>自 TPAC 2015 以来，我们增强Web的安全和隐私方面开展了一系列工作，其中最重要的两个里程碑是 Web加密（WebCrypto）和替代用户名－口令的新型Web认证方式。</p>
 	<ul>
-	  <li>Progress in Web Application Security enable Web Application developers to secure their apps, cooperate with the browser environment on enforcement of security policies, and make it easier for large deployed sites to upgrade their security to HTTPS.
+	  <li>在Web应用安全方面，我们允许Web应用的开发者进一步增强其应用的安全性，使应用可以更好的和浏览器环境一起满足用户的安全策略，并让大规模的Web站点更易于将其访问升级为 HTTPS 的加密访问。
 	  </li>
-	  <li>Killing Passwords: <a href="/2016/02/securewebauthwg.html.en">Launched</a> in February, the <a href="/Webauthn/">Web Authentication Working group</a> will specify a Web API for strong authentication on the Web; a real opportunity to move beyond passwords to a more usable and more secure authentication experience on the Web.
+	  <li>口令认证机制的替代方案（Killing Passwords）：2016年2月，W3C正式 <a href="/2016/02/securewebauthwg.html.en">启动了安全Web认证的标准化工作</a>，新设立的<a href="/Webauthn/">Web认证工作组（Web Authentication Working group）</a> 将提出一在 Web API，为Web提供强认证，为Web用户提供更加易用、安全的身份认证体验，从而完全超越现在被广泛采用的口令认证机制。
 	  </li>
 	</ul>
 	
 	<h3 id="crypto-authn">2.1 Web加密与认证</h3>
-	<p>The <a href="/TR/WebCryptoAPI/">Web Cryptography API</a>, anticipated to progress to Proposed Recommendatio, is about performing basic cryptographic operations in web applications. These are core components for libraries to build upon, avoiding the need for developers to "roll their own" solutions.</p>
-	<p>The <a href="/2015/12/web-authentication-charter.html">Web Authentication Working Group charter</a> illustrates another field where the standardization pushed by W3C serves the telecommunications industry: the adoption of the FIDO-based authentication methods in browsers promises to simplify identity management, an important need that operators can both help fulfill and benefit from. Chartered to specify a Web API for strong authentication on the Web, this work gives us the real opportunity to move beyond passwords, to a more usable and more secure authentication experience on the Web.</p>
+	<p>W3C已经发布了 <a href="/TR/WebCryptoAPI/">Web加密API（Web Cryptography API）</a>的提案推荐标准（Proposed Recommendation），帮助Web应用更好的执行基本密码学操作。这些标准化工作是构建许多功能库的基础，也可以避免开发者重复开发各自的解决方案，避免可能引发的互操作性问题。</p>
+	<p>已经发布的 <a href="/2015/12/web-authentication-charter.html">Web认证工作组章程</a> 描绘了 W3C 可以为电信行业提供标准化工作平台的另一项工作：通过在浏览器中采用基于 FIDO 的认证方法，可以简化 Web应用的身份管理（identity management）。这是电信运营商的一项重要需求，同时也是电信运行商可以贡献力量并从中获益的重要舞台。该章程指出，工作组将致力于开发一组 Web API来加强 Web的认证机制，从而帮助我们真正超越口令认证，为Web 提供更易用、更安全的认证解决方案。</p>
 	
 	<h3 id="hasec">2.2 硬件安全（Hardware-Based Security）</h3>
-	<p>With the prospects of bringing the high security ensured by hardware-tokens to the Web platform, we are continuing development of a Hardware Security Working Group draft charter.</p>
+	<p>由于硬件令牌（hardware token）可以为Web平台带来很高的安全性保证，W3C 正在逐步开展 硬件安全工作组（Hardware Security Working Group）的章程制定工作。</p>
 	
-	<p>There are a number of use cases that this standard will enable, including but not limited to the ability to manage credential information for hardware-based security modules, and the ability to access specific security sensitive services offered by hardware tokens such as Payments transaction authorization andd Identity verification. </p>
+	<p>我们已经识别了一组用例和标准化需求，包括但不局限于以下内容：为基于硬件的安全提供管理信任证信息（credential information）能力的模块，在支付交易等场景中访问基于硬件令牌的安全敏感的服务（security sensitive services）实现身份验证与交易授权等。</p>
 	
 	<h3 id="webappsec">2.3 Web应用安全</h3>
-	<p>Content Security Policy Level 2, Mixed Content, Subresource Integrity, and Upgrade Insecure Requests are all Candidate Recommendations. These specs enable Web Application developers to secure their apps, cooperate with the browser environment on enforcement of security policies, and make it easier for large deployed sites to upgrade their security to HTTPS. Another significant deliverable from WebAppSec is the advancement to <a href="/TR/2016/WD-CSP3-20160126/">FPWD of Content Security Policy Level 3</a> late January.</p>
-	<p>Drawing upon these specifications, <a href="/blog/news/archives/5263">W3C upgraded its own website to HTTPS</a>, offering encrypted, integrity-protected access to W3C resources and Recommendations.</p>
+	<p>W3C发布了一系列与Web应用及内容安全相关的标准，包括内容安全策略（Content Security Policy Level 2）、混合内容（ Mixed Content）、子资源完整性（Subresource Integrity），以及升级非安全请求（Upgrade Insecure Requests）等标准工作都已经推进到候选推荐标准（Candidate Recommendations）阶段。这些规范的制定帮助Web应用的开发者增强其应用的安全性，使应用能够和浏览器环境更好的互动，强制执行用户提出的安全策略，并帮助大规模王震更容易的升级到基于 HTTPS 的安全请求中。Web应用安全工作组的另一项重要进展是在2016年1月下旬发布了<a href="/TR/2016/WD-CSP3-20160126/">内容安全策略（Content Security Policy Level 3）</a>的首份标准工作草案。</p>
+	<p>在发布标准及其草案的同时， <a href="/blog/news/archives/5263">W3C还将其官方网站升级到 HTTPS</a>，使Web用户及开发者能够通过加密的、提供完整性保护的方式访问 W3C的各类资源及技术规范。</p>
 	
-	<h3>Security and Privacy Reviews</h3>
-	<p>We are systematically asking for Security and Privacy Considerations in charters and specification development. The TAG published a draft <a href="/TR/2015/NOTE-security-privacy-questionnaire-20151210/">Security and Privacy Self-Review Questionnaire</a>, with input from the Privacy Interest Group (PING) and Web Application Security Working Group, to help editors in making those assessments.</p>
-	<p>PING and Web Security Interest Group offer assistance with specification review, and the Director will look for Security and Privacy Considerations at specification transitions.</p>
+	<h3>审阅W3C技术文档中可能存在的安全与隐私问题</h3>
+	<p>在W3C制定工作组章程和开发技术标准的过程中，我们通过系统化的方法确保对其中可能的安全与隐私问题进行细致考虑。W3C的技术架构组（TAG）与隐私保护兴趣组（Privacy Interest Group，PING）及Web应用安全工作组的共同努力下，发布了 <a href="/TR/2015/NOTE-security-privacy-questionnaire-20151210/">安全与隐私自评估问题清单（Security and Privacy Self-Review Questionnaire）</a>的草案，帮助各个工作组的标准编辑确保在标准开发过程中开展与安全、隐私相关的评估。</p>
+	<p>隐私保护兴趣组（PING）与Web安全兴趣组（Web Security Interest Group）在标准的安全与隐私保护审查中提供帮助，W3C理事长（Director）也将在标准推进过程中对安全和隐私保护考虑进行审查。</p>
 	
 	<h3 id="privacy">2.4 隐私保护</h3>
-	<p>The Tracking Protection Working Group sent the <a href="/TR/2015/CR-tracking-dnt-20150820/">Tracking Preference Expression (TPE)</a> to Candidate Recommendation and the Compliance Specification is almost there. These specs give a mechanism for expressing tracking preferences, and by which sites can indicate their compliance with user requests.</p>
-	<p>PING published a draft of <a href="/TR/fingerprinting-guidance/">Fingerprinting Guidance for Web Specification Authors</a>.</p>
-	
+	<p>W3C的追踪保护工作组（Tracking Protection Working Group）发布了 <a href="/TR/2015/CR-tracking-dnt-20150820/">追踪偏好表达（Tracking Preference Expression ，TPE)</a> 的候选推荐标准，而追踪范围的符合性规范（Compliance Specification）也基本完成。这些技术规范为Web用户及Web应用开发者提供了一种标准机制来表达其对网络行为追踪的偏好（是否允许Web应用追踪用户行为），并使Web应用能够就是否符合用户的追踪偏好要求做出说明。</p>
+	<p>隐私保护兴趣组（PING）还发布了 <a href="/TR/fingerprinting-guidance/">Web规范作者获取浏览器指纹指南（Fingerprinting Guidance for Web Specification Authors），建议新的Web标准在开发过程中，应如何避免过度收集用户通过浏览器访问时的各种指纹信息。</a>.</p>
 	
 	<h2 id="champions">3. 基于开放Web平台的产业领域</h2>
-	<p>As the impact of the Open Web Platform has grown, several industries are building their business platforms on top of the Web and using Web technology.</p>
-	<p>Last October <a href="https://www.w3.org/2015/10/w3c-highlights/#verticals">we presented</a> why the Industry is important to the Web and vice-versa, and introduced the Industry Vertical Champion Program,</p>
+	<p>随着开放Web平台的影响力不断扩大，一些垂直行业领域正在采用Web技术，在开放Web平台之上构造其业务平台。</p>
+	<p>2015年10月，<a href="https://www.w3.org/2015/10/w3c-highlights/#verticals">W3C 阐述了关注垂直领域对Web发展的重要性，也指出Web对这些垂直领域发展的积极作用</a>，在此基础上，W3C启动了垂直领域提升计划（Industry Vertical Champion Program），其目的是：</p>
 	<ul>
-	  <li>to understand at a deep level the Web technology needs of the industry,</li>
-	  <li>to understand what is important today and what will be important in the future,</li>
-	  <li>to map the industry needs into specific Web technology needs, and</li>
-	  <li>to address real, near-term business problems within the context of the core values of the Web ...</li>
-	  <li>... in a global and inclusive way.</li>
+	  <li>在更深层次上理解不同垂直领域对Web技术的新需求。</li>
+	  <li>理解不同垂直领域的发展现状及未来趋势。</li>
+	  <li>将不同垂直领域对Web技术的需求转化为Web技术的新增长点。</li>
+	  <li>在Web的核心价值下，解决不同垂直领域中真实存在的、能满足行业短期商业需要的瓶颈技术问题。</li>
+	  <li>.在全球化产业发展的视野下，以非排他（clusive）的方式满足不同垂直领域的需求。</li>
 	</ul>
 
 
 	<h3 id="automotive">3.1 汽车</h3>
-	<p>Automotive's future is made of rich user experiences, greater security and smarter location-based services. Drivers and passengers demand the same rich user experiences in vehicles that they enjoy with all their mobile and other devices. HTML5 and the Open Web Platform offer the best roadmap for new services, increased security and interoperability.</p>
-	<p>W3C has been working with GENIVI to enhance our work with the automotive industry to the level of having a strong shared vision and partnership. The GENIVI Alliance is a non-profit automotive industry alliance committed to driving the broad adoption of an In-Vehicle Infotainment (IVI) open-source development platform.</p>
-	<p>The <a href="/2014/automotive/">Automotive Working Group</a> is <a href="/TR/#tr_Automotive">advancing on the Recommendation Track</a> the W3C Vehicle Information API, which aims to enable connectivity through in-vehicle infotainment systems and vehicle data access protocols and can be leveraged by web applications running on mobile devices that access the data resources of a connected passenger vehicle. A companion, the Vehical Data API, defines a standard for Vehicle Data which might be available in a vehicle.</p>
-	<p>The group is now engaging with different stakeholders and consumer groups in addressing data rights, and has established a Privacy and Security Task Force for Automotive.</p>
-	<p>The Automotive and Web Platform Business Group, formed back in 2013, is pursuing work on a Location-Based Services API, and has handed use cases for automotive Media Tuner needs to the TV Control API Community Group. A draft charter for a TV Control Working Group is in the work.
+	<p>汽车行业在未来需要为用户提供丰富的用户体验，更安全、更智能的位置服务。汽车的驾驶员和乘客都要求车辆能够提供更丰富的用户体验，并能够帮助他们更好的与移动设备和其他关联设备互动。HTML5 及 开放Web平台为面向汽车行业研发更安全及可广泛互操作的新应用及服务提供了可能的实现途径。</p>
+	<p>W3C正在与 GENIVI 一起同汽车行业紧密合作，形成了重要的共识。GENIVI 联盟（GENIVI Alliance）是汽车行业的非盈利联盟，致力于开发开源的车内信息系统平台。</p>
+	<p>W3C的 <a href="/2014/automotive/">汽车工作组（Automotive Working Group）</a> 正在 <a href="/TR/#tr_Automotive">积极推进 汽车信息API（Vehicle Information API）的标准化工作</a>，该规范将车载信息娱乐系统（in-vehicle infotainment system）与汽车的数据访问协议结合起来，允许运行在移动端上的Web应用通过标准接口访问网联汽车的实时状态数据。与此同时，W3C还定义了车辆数据API（Vehical Data API），标准化车辆数据的结构与交互格式。</p>
+	<p>目前，该工作组正在与该领域不同的利益相关方及消费者团体共同工作，解决数据使用权问题，并建立了关于车辆数据的隐私保护和安全任务组（Privacy and Security Task Force for Automotive）。</p>
+	<p>成立于2013年的汽车与Web平台商务组（Automotive and Web Platform Business Group）正在开展位置服务API （Location-Based Services API）的工作，并已向电视控制API社区组（TV Control API Community Group）提及了关于车载媒体控制（automotive media tuner）的应用场景与具体用例，并在电视控制API社区组开展标准草案的起草工作。
 	</p>
-<p>The Open Web Platform helps reduce costs and complexity by replacing multiple proprietary approaches with a simplified global solution. Web applications built for vehicles using smartphones or embedded solutions are delivered as products or services. Areas where the Web can help auto:</p>
+<p>开放Web平台通过提供一个简单、全球统一的解决方案，能够帮助有效降低成本和复杂性。为车载需求开发的Web应用可以运行在移动终端及嵌入式解决方案中，向用户提供产品或服务。Web技术可以帮助汽车行业：</p>
 	<ul>
-	  <li>Reducing driver distraction and improving safety</li>
-	  <li>Location-based services, shopping, and customer engagement</li>
-	  <li>Enhanced driving experiences and situational awareness</li>
-	  <li>Integrating home, work, and travel</li>
+	  <li>降低驾驶员的注意力不集中行为，提高道路交通安全。</li>
+	  <li>为驾驶员及乘客提供丰富的服务（如基于位置的服务、在线购买与支付服务等），提升用户粘性。</li>
+	  <li>增强驾驶体验，帮助驾驶员感知车辆状态。</li>
+	  <li>跨越家、工作场及旅途提供整合的、持续的用户体验。</li>
 	</ul>
 	
 	<h3 id="digital-marketing">3.2 数字营销（Digital Marketing）</h3>
